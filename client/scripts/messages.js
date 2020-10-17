@@ -1,10 +1,14 @@
 var Messages = {
-// use parse.readAll(successCb) with a cb function to grab all the messages?
 
 
 
+  //look at what everything else is doing!
+  //should have keys and values - key is roomname?
+  //properties or prototypes of messages
+  //add a message, update a message
+  //what can a message do
+  //add a structure to it
+  //what if someone does not enter an username
 
-// With successCB iterate over data array
-// render
-// append each message
+
 };
