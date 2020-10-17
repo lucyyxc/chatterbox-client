@@ -10,6 +10,7 @@ var Parse = {
       type: 'POST',
       data: JSON.stringify(message),
       contentType: 'application/json',
+      //we want to run successCB to retrieve the inputted message in the submit field in chatterbox and post it to the server
       success: successCB,
       error: errorCB || function(error) {
         console.error('chatterbox: Failed to fetch messages', error);
