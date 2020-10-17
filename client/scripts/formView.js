@@ -9,9 +9,8 @@ var FormView = {
 
   handleSubmit: function(event) {
     // Stop the browser from submitting the form
-    // console.log('EVENT', event);
     event.preventDefault();
-    // console.log('prevent default', event.preventDefault());
+
     console.log('click!');
     //use .val() on the id message
     var $texts = FormView.$text.val();
@@ -26,7 +25,8 @@ var FormView = {
     var successCB = function() {
       console.log('chatterbox: Message submitted');
       App.fetch();
-      //App.initialize();
+      MessagesView.$chats.html('');
+      location.reload();
       //MessagesView.initialize();
     };
     //create errorCB

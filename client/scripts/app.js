@@ -10,14 +10,14 @@ var App = {
     FormView.initialize();
     RoomsView.initialize();
     MessagesView.initialize();
-    // setInterval(function() {
-    //   MessagesView.initialize();
-    // }, 8000);
+    setInterval(function() {
+      location.reload();
+    }, 15000);
 
     // Fetch initial batch of messages
-    setInterval(function() {
-      App.fetch();
-    }, 8000);
+    // setInterval(function() {
+    //   App.fetch();
+    // }, 8000);
     App.startSpinner();
     App.fetch(App.stopSpinner);
 
@@ -27,7 +27,7 @@ var App = {
     Parse.readAll((data) => {
       // examine the response from the server request:
       console.log(data);
-      MessagesView.initialize();
+      //MessagesView.initialize();
       callback();
     });
   },
