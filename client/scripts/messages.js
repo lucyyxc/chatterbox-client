@@ -1,9 +1,6 @@
 var Messages = {
 
-
-
-  //look at what everything else is doing!
-  //should have keys and values - key is roomname?
+  //should have keys and values representing username, text, and roomname
   //properties or prototypes of messages
   //add a message, update a message
   //what can a message do
