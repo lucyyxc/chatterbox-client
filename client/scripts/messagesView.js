@@ -19,6 +19,9 @@ var MessagesView = {
   // need to check if message.text contains html elements
   // https://stackoverflow.com/questions/17289689/jquery-check-if-string-is-html-tag
   // message text = $('body').appened(<div> dsjfdsj</div>)
+    if (message.username === undefined) {
+      return;
+    }
     var $compiled = MessageView.render(message);
     MessagesView.$chats.append($compiled);
   }
